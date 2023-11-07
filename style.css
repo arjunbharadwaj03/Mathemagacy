@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: red;
+    font-family: Poppins;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: linear-gradient(to right, orange, red);
+    animation: example 3s;
+}
+
+.home h1 {
+    margin: 0;
+    color: white;
+    padding-bottom: 0;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.home p {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.home .btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.home .btn {
+    padding: 15px 25px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    background: white;
+}
+
+.home .btn:hover {
+    background: rgb(211, 63, 0);
+    color: white;
+    animation: btn 1s;
+    cursor: pointer;
+}
+
+@keyframes btn {
+    0% {background: white; color: black;}
+    100% {background: red,; color: white;}
+}
+
+@keyframes example {
+    0% {left: -100%}
+    100% {left: 0%;}
+}
+
+@media all and (max-width: 768px) {
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+
+    .home .btn {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .home h1 {
+        font-size: 25px;
+    }
+}

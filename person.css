@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.back {
+    position: absolute;
+    color: white;
+    background: none;
+    display: flex;
+    animation: go-back-left 1.5ss;
+    z-index: 1;
+}
+
+.back-text {
+    background: #a6170d;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-text svg {
+    color: white;
+    padding: 20px;
+    height: 25px;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.back-text:hover svg {
+    transform: scale(1.2);
+    stroke-width: 2;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.container h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(#ED4264, #FFEDBC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: starting-heading 2s;
+}
+
+.cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 50px;
+}
+
+.cols p {
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+    animation: text-starting 2s;
+}
+
+.cols img {
+    width: 100%;
+    border-radius: 20px;
+    animation: image-starting 2s;
+}
+
+@keyframes image-starting {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes text-starting {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+        transform: scale(1);
+    }
+}
+
+@keyframes starting-heading {
+    0% {transform: scale(3)}
+    100% {transform: scale(1)}
+}
+
+@media all and (max-width: 1200px) {
+    body {
+        display: inline;
+    }
+    .cols {
+        grid-template-columns: auto;
+    }
+
+    .container h1 {
+        z-index: 1
+    }
+
+    .cols img {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .cols p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .cols p {
+        font-size: 12px;
+    }
+
+    .back-text svg {
+        padding: 10px;
+        height: 15px;
+    }
+}

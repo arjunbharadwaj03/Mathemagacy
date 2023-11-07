@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathemagacy</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="back" class="back">
+        <a href="index.html">
+            <div class="back-text">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>                              
+            </div>
+        </a>
+    </div>
+    <div id="container" class="container animate">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <h2 id="score-text" class="score-text hide"></h2>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn animate-btn" data-tilt>Start</button>
+            <button id="next-btn" class="next-btn btn hide animate-btn" data-tilt>Next</button>
+            <button id="score-btn" class="score-btn btn hide animate-btn" data-tilt>See Score</button>
+        </div>
+    </div>
+
+
+    <script src="quiz.js"></script>
+    <script src="vanilla-tilt.js"></script>
+</body>
+</html>
