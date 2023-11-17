@@ -91,8 +91,10 @@ body.wrong {
 .btn {
     background-image: radial-gradient(#00B4DB, #0083B0);
     border: 2px solid #005c7a;
+    height: 50px;
     border-radius: 5px;
     padding: 5px 10px;
+    font-size: 18px;
     color: white;
     outline: none;
     transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -123,6 +125,7 @@ body.wrong {
 .start-btn, .next-btn, .score-btn {
     font-size: 24px;
     font-weight: bold;
+    height: auto;
     padding: 10px 20px;
     animation: fade 2s;
 }

@@ -107,38 +107,80 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: "What is 10 + 20",
+        question:
+            "What foundation concept did Brahmagupta recognise and define?",
         answers: [
-            { text: "30", correct: true },
-            { text: "1020", correct: false },
+            { text: "Zero as a numerical value", correct: true },
+            { text: "Imaginary numbers", correct: false },
         ],
     },
     {
-        question: "What is 112 + 35",
+        question: "Where was Brahmagupta born?",
         answers: [
-            { text: "137", correct: false },
-            { text: "147", correct: true },
+            { text: "Varanasi", correct: false },
+            { text: "Bhinmal", correct: true },
         ],
     },
     {
-        question: "What is 0.09 + 20.03",
+        question:
+            "What is one of C.R. Rao's most notable contributions to the theory of estimation?",
         answers: [
-            { text: "20.12", correct: true },
-            { text: "20.2", correct: false },
+            { text: "Cramér–Rao inequality", correct: true },
+            { text: "Rao-Blackwell theorem", correct: false },
         ],
     },
     {
-        question: "What is 10 + 20 + 32",
+        question:
+            "What earned Shakuntala Devi a place in the 1982 edition of The Guinness Book of World Records?",
         answers: [
-            { text: "62", correct: true },
-            { text: "72", correct: false },
+            {
+                text: "Multiplying 2 13 digit No",
+                correct: true,
+            },
+            { text: "Solving complex problems", correct: false },
         ],
     },
     {
-        question: "What is 10 - 20 + 10 * 2",
+        question:
+            "What was the primary focus of Bhaskara I's work, Mahabhaskariya?",
         answers: [
-            { text: "0", correct: false },
-            { text: "10", correct: true },
+            { text: "Geometric theorems", correct: false },
+            { text: "Indeterminate equations", correct: true },
+        ],
+    },
+    {
+        question: "What was Shakuntala Devi's nickname?",
+        answers: [
+            { text: "The Human Calculator", correct: false },
+            { text: "The Human Computer", correct: true },
+        ],
+    },
+    {
+        question: "What was Aryabhata's main field of study?",
+        answers: [
+            { text: "Astronomy", correct: false },
+            { text: "Mathematics", correct: true },
+        ],
+    },
+    {
+        question: "Where was Srinivasa Ramanujan born?",
+        answers: [
+            { text: "Erode", correct: true },
+            { text: "Chennai", correct: false },
+        ],
+    },
+    {
+        question: "What was Ramanujan's self-taught mathematical specialty??",
+        answers: [
+            { text: "Number Theory", correct: true },
+            { text: "Geometry", correct: false },
+        ],
+    },
+    {
+        question: "What is the name of Aryabhata's famous book?",
+        answers: [
+            { text: "Arya Granth", correct: false },
+            { text: "Aryabhatiya", correct: true },
         ],
     },
 ];
