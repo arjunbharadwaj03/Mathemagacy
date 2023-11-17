@@ -78,6 +78,10 @@ body {
     animation: image-starting 2s;
 }
 
+.paras {
+    text-align: left;
+}
+
 @keyframes image-starting {
     0% {
         opacity: 0;
