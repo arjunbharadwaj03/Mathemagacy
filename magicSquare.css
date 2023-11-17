@@ -32,4 +32,13 @@ body {
     outline: none;
     border: 2px solid black;
     pointer-events: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media all and (max-width: 768px) {
+    body{
+        grid-template-columns: 100%;
+        transform: scale(0.6);
+    }
 }
