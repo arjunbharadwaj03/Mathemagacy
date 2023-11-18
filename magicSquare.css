@@ -91,6 +91,12 @@ body {
     font-size: 20px;
     margin: 20px;
     border-radius: 10px;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .container {
@@ -107,6 +113,10 @@ body {
     pointer-events: none;
     text-align: center;
     font-size: 25px;
+}
+
+.hide {
+    display: none;
 }
 
 @media all and (max-width: 768px) {

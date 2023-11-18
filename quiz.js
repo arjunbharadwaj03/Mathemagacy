@@ -33,7 +33,9 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question;
+    questionElement.innerText = `${currentQuestionIndex + 1}. ${
+        question.question
+    }`;
     question.answers.forEach((answer) => {
         const button = document.createElement("button");
         button.innerText = answer.text;

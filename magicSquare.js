@@ -2,6 +2,7 @@ const day = document.getElementById("day");
 const month = document.getElementById("month");
 const year = document.getElementById("year");
 const btn = document.getElementById("btn");
+const sum = document.getElementById("sum");
 const s1 = document.querySelector(".s1");
 const s2 = document.querySelector(".s2");
 const s3 = document.querySelector(".s3");
@@ -37,4 +38,11 @@ btn.addEventListener("click", () => {
     s14.value = parseInt(yearSplit[2] + yearSplit[3]) - 1;
     s15.value = parseInt(day.value) + 1;
     s16.value = parseInt(month.value) - 1;
+    sum.classList.remove("hide");
+    sum.innerHTML = `Sum: ${
+        parseInt(s1.value) +
+        parseInt(s2.value) +
+        parseInt(s3.value) +
+        parseInt(s4.value)
+    }`;
 });
